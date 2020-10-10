@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style -->
     <link rel="stylesheet" href="./style/style.css">
+
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <title>Darling - app</title>
 </head>
 <body>
@@ -31,9 +40,21 @@
 
 
         <div class="box">
-            <h1>
-                hello
-            </h1>
+            <div class="boxes">
+                <div class="carousel">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 
@@ -45,21 +66,38 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a class="active" href="">Home</a>
                         </li>
                         <li>
-                            <a href="">Tiketku</a>
+                            <a class="" href="">Tiketku</a>
                         </li>
                         <li>
-                            <a href="">Bantuan</a>
+                            <a class="" href="">Bantuan</a>
                         </li>
                         <li>
-                            <a href="">Login</a>
+                            <a class="" href="">Login</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </footer>
     </div>
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+        });
+    </script>
 </body>
 </html>
