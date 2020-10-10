@@ -19,7 +19,6 @@ body{
 header{
     width: 100%;
     height: 40px;
-    background: brown;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,14 +28,24 @@ header nav ul{
     display: flex;
     background: #502D84;
     width: 100%;
-    height: 40px;
+    height: 62px;
     list-style: none;
     justify-content: space-between;
     align-items: center;
 }
 header nav ul li a{
     color: #ffffff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 14px;
 }
+
+/* logo */
+.logo{
+    font-weight: 600;
+    font-size: 18px;
+}
+
 
 .box{
     display: flex;
@@ -45,4 +54,30 @@ header nav ul li a{
     background: green;
     width: 100%;
     height: 900px;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+footer nav ul{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 62px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+footer nav ul li a{
+    color: #929292;
+    font-size: 12px;
+    text-decoration: none;
 }
