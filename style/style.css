@@ -504,7 +504,134 @@ color: #929292;
 }
 
 
+/* jumlah tiket */
+.main-detail .details{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
+.main-detail .details i{
+    margin-top: 15px;
+    font-size: 25px;
+    color: #BDBDBD;
+}
+
+.text-box{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #E9E9E9;
+}
+
+.minus{
+    background: var(--primary-bg);
+    padding: 5px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+.plus{
+    background: var(--primary-bg);
+    padding: 5px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* data diri */
+
+.box-datadiri{
+    display: flex;
+    background: var(--third-bg);
+    width: 100%;
+    height: 750px;
+    flex-direction: column;
+}
+.isian{
+    width: 90%;
+    margin: 80px auto;
+    overflow: scroll;
+}
+
+.datadiri{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 10px;
+    border: 1px solid #E9E9E9;
+    width: 100%;
+}
+.datadiri .nama{
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #666666;
+}
+
+.datadiri .email{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #BDBDBD;
+}
+.tersimpan{
+    display: flex;
+    
+    width: 750px;
+}
+/* pembayaran */
+.box-pembayaran{
+    display: flex;
+    background: var(--third-bg);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.pembayaran{
+    width: 90%;
+    margin: 80px auto 0;
+}
+.pembayarandua{
+    margin: 30px auto;
+    width: 90%;
+}
+.metode i{
+    font-size: 18px;
+    color: #BDBDBD;
+}
+.metode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.metode .kiri{
+    display: flex;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+    color: #BDBDBD;
+}
 
 
 
