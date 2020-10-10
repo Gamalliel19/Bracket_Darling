@@ -16,9 +16,24 @@ body{
     background: #bdbdbd;
 }
 
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--primary-bg);
+  }
+
+
+
 /* layout */
 .container{
-    width: 480px;
+    width: 360px;
     margin: 0 auto;
 }
 
@@ -33,6 +48,10 @@ header{
     display: flex;
     z-index: 5;
 }
+/* header nav{
+    width: 90%;
+    margin: 0 auto;
+} */
 header nav ul{
     display: flex;
     background: var(--primary-bg);
@@ -60,14 +79,15 @@ header nav ul li a{
     display: flex;
     background: var(--third-bg);
     width: 100%;
-    height: 900px;
+    height: 1150px;
+    flex-direction: column;
 }
 
 
 /* main page */
 .boxes{
     background: var(--primary-bg);
-    height: 200px;
+    height: 150px;
     width: 100%;
 }
 
@@ -75,12 +95,13 @@ header nav ul li a{
 
 /* swiper js */
 .carousel{
-    margin: 100px 0 0;
+    margin: 70px 0 0;
 }
 .swiper-container {
     width: 90%;
-    height: 200px;
+    height: 150px;
     border-radius: 8px;
+    box-shadow: 0px 4px 24px rgba(47, 42, 80, 0.08);
   }
 
 .swiper-slide {
@@ -107,12 +128,108 @@ header nav ul li a{
     display: block;
     margin: 20px auto;
     width: 90%;
-    height: 40px;
+    height: 48px;
     border: none;
     background: #ffffff;
     border-radius: 8px;
     padding: 0 20px;
+    
 }
+.search input::placeholder{
+    color: #bdbdbd;
+}
+
+.kategoridua{
+    width: 90%;
+    margin: 20px auto 0;
+    color: #666666;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kategori{
+    width: 90%;
+    margin: 180px auto 0;
+    color: #666666;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.linksemua{
+    color: #929299;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* card section */
+.container-card{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    overflow: scroll;
+}
+.card{
+    width: 300px;
+    height: 295px;
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.card img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-content{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.container-card .card-title{
+    color: #666666;
+}
+.container-card .card-tgl{
+    color: #929292;
+}
+.container-card .card-penyanyi{
+    color: #929292;
+}
+.card-harga{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-harga .kiri .kiris{
+    color: #bdbdbd;
+    font-size: 12px;
+    font-weight: 400;
+}
+.card-harga .kiri .dua{
+    color: #929292;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-harga .kanan a{
+    color: #fff;
+    background: var(--primary-bg);
+    border-radius: 100px;
+    padding: 5px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+
+
 
 
 
@@ -140,18 +257,159 @@ footer nav ul li a{
     color: #929292;
     font-size: 12px;
     text-decoration: none;
+    margin: 10px 0 0;
 }
 
 footer nav ul li a.active{
     color: var(--primary-bg);
 }
 
+footer nav ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer nav ul li a img{
+    margin-bottom: 10px;
+}
+
+
+
+
+/* login page */
+.box-login{
+    display: flex;
+    background: var(--third-bg);
+    width: 100%;
+    height: 750px;
+    flex-direction: column;
+}
+.main-login{
+    width: 90%;
+    margin: 80px auto;
+}
+.main-login-content .title{
+    color: #666666;
+    font-size: 18px;
+    font-weight: 500;
+}
+.main-login-content .belompunya{
+    color: #929292;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.main-login-content .belompunya a{
+    color: #502d84;
+    text-decoration: none;
+}
+.login input{
+    width: 320px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+.login input::placeholder{
+    color: #bdbdbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+.login{
+    margin-top: 20px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.lupa p{
+    color: #929292;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-login{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    background: #D2C2EA;
+    border-radius: 8px;
+    padding: 15px ;
+}
+.btn-login a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    background: #D2C2EA;
+    border-radius: 8px;
+    padding: 15px ;
+}
+.opsi-lain{
+    color: #929292;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.google-btn{
+    text-decoration: none;
+    color: #fff;
+    background: #D54C3D;
+    padding: 15px 55px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.facebook-btn{
+    text-decoration: none;
+    color: #fff;
+    background: #4867AA;
+    padding: 15px 45px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 480px){
     .container{
-        width: 450px;
+        width: 100%;
         margin: 0 auto;
+    }
+    .box{
+        height: 1250px;
+    }
+    .box-login{
+        height: 700px;
     }
     /* swiper js */
     .carousel{
@@ -181,5 +439,8 @@ footer nav ul li a.active{
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+    }
+    .kategori{
+        padding: 70px 0 0;
     }
 }
