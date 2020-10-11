@@ -426,7 +426,16 @@ footer nav ul li a img{
     border-radius: 100px;
     position: absolute;
     top: 19px;
-    left: 360px;
+    left: 318px;
+}
+.frame{
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100px;
+    position: absolute;
+    top: 192px;
+    left: 318px;
 }
 .main-detail{
     width: 90%;
@@ -982,6 +991,8 @@ margin-bottom: 5px;
 }
 
 
+/* stream setting */
+
 
 
 
@@ -1073,5 +1084,15 @@ margin-bottom: 5px;
         border-radius: 8px;
         padding: 0 45px 0 20px;
         border: 1px solid #E9E9E9;
+    }
+    .back-btn{
+        font-size: 27px;
+        color: #bdbdbd;
+        background: #fff;
+        padding: 5px 10px;
+        border-radius: 100px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
     }
 }
