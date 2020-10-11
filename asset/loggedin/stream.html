@@ -11,10 +11,6 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- swiper js -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
@@ -40,13 +36,29 @@
                 <a href="../loggedin/home.html">
                     <i class="fas fa-chevron-left back-btn"></i>
                 </a>
-                <a href="" class="setting-btn">
-                    <img src="../../img/icon/settings.png" alt="">
-                </a>
+
+                <div class="setting-btn">
+                    <i class="fas fa-cog setting-btns"></i>
+                </div>
                 <a href="" class="frame">
                     <img src="../../img/icon/frame.png" alt="">
                 </a>
             </div>
+
+            <div class="popup">
+                
+                <p>Kualitas Live Konser</p>
+                <select id="kualitas" name="kualitas">
+                    <option class="kualitas" value="360">Otomatis(360p)</option>
+                    <option class="kualitas" value="1080">1080p</option>
+                    <option class="kualitas" value="720">720p</option>
+                    <option class="kualitas" value="480">480p</option>
+                    <option class="kualitas" value="360">360p</option>
+                    <option class="kualitas" value="240">240p</option>
+                    <option class="kualitas" value="144">144p</option>
+                  </select>
+            </div>
+            <div class="backdrop-popup "></div>
 
             <div class="main-detail">
                 <p class="title">
@@ -197,7 +209,7 @@
 
 
 
-
+    <script src="../../script/app.js"></script>
 </body>
 
 </html>
